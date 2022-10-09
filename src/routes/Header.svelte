@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 </script>
 
 <header>
@@ -8,14 +9,14 @@
 			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
 		</svg>
 		<ul>
-			<li class:active={$page.url.pathname === '/'}>
-				<a href="/">Home</a>
+			<li class:active={$page.url.pathname === base + '/'}>
+				<a href={base + '/'}>Home</a>
 			</li>
-			<li class:active={$page.url.pathname === '/education'}>
-				<a href="/education">Education</a>
+			<li class:active={$page.url.pathname === base + '/education'}>
+				<a href={base + "/education"}>Education</a>
 			</li>
-			<li class:active={$page.url.pathname === '/tech-skills'}>
-				<a href="/tech-skills">Tech Skills</a>
+			<li class:active={$page.url.pathname === base + '/tech-skills'}>
+				<a href={base + "/tech-skills"}>Tech Skills</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
