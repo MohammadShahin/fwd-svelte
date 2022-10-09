@@ -1,0 +1,39 @@
+<script>
+	import Header from './Header.svelte';
+	import './styles.css';
+	import ContanctInfo from '$lib/contanct-info.svelte';
+	import Animation from '$lib/animation.svelte';
+
+	export const prerender = true;
+</script>
+
+<div class="app">
+	<Header />
+
+	<main>
+		<div class="container">
+			<ContanctInfo />
+			<slot />
+			<Animation />
+		</div>
+	</main>
+</div>
+
+<style>
+	.app {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
+
+	main {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+		width: 100%;
+		max-width: 64rem;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+</style>
