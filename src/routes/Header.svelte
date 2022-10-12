@@ -9,7 +9,7 @@
 			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
 		</svg>
 		<ul>
-			<li class:active={$page.url.pathname === base + '/'}>
+			<li class:active={$page.url.pathname === base + '/' || $page.url.pathname === base}>
 				<a href={base + '/'}>Home</a>
 			</li>
 			<li class:active={$page.url.pathname === base + '/education'}>
