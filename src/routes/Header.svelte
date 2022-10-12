@@ -10,7 +10,7 @@
 		</svg>
 		<ul>
 			<li class:active={$page.url.pathname === base + '/' || $page.url.pathname === base}>
-				<a href={base + '/'}>Home</a>
+				<a href={base + '/'}>Homes</a>
 			</li>
 			<li class:active={$page.url.pathname === base + '/education'}>
 				<a href={base + "/education"}>Education</a>
