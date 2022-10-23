@@ -18,12 +18,7 @@ jobs:
           node-version: '16'
       - name: Install dependencies
         run: npm ci
-      - name: Run linters
-        uses: wearerequired/lint-action@v2.1.0
-        with:
-          eslint: true
-          prettier: true
-      - name: linter and prettier
+      - name: Run linter and prettier
         run: npm run lint
       - name: Build website
         run: npm run build
