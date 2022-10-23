@@ -1,6 +1,8 @@
 <script lang="ts">
-	import Animation from '$lib/animation.svelte';
 	import SolPrice from '$lib/sol-price.svelte';
+
+	if (SolPrice === 10) {
+	}
 </script>
 
 <svelte:head>
