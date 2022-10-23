@@ -13,10 +13,10 @@
 				<a href={base + '/'}>Home</a>
 			</li>
 			<li class:active={$page.url.pathname === base + '/education'}>
-				<a href={base + "/education"}>Education</a>
+				<a href={base + '/education'}>Education</a>
 			</li>
 			<li class:active={$page.url.pathname === base + '/tech-skills'}>
-				<a href={base + "/tech-skills"}>Tech Skills</a>
+				<a href={base + '/tech-skills'}>Tech Skills</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
