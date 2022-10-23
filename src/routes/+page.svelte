@@ -1,8 +1,5 @@
 <script lang="ts">
 	import SolPrice from '$lib/sol-price.svelte';
-
-	if (SolPrice === 10) {
-	}
 </script>
 
 <svelte:head>
