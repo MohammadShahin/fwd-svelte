@@ -21,6 +21,7 @@ jobs:
       - name: Run linter and prettier
         run: npm run lint
       - name: Run tests
+        run: npx playwright install --with-deps
         run: npm run test
       - name: Build website
         run: npm run build
