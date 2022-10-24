@@ -20,8 +20,9 @@ jobs:
         run: npm ci
       - name: Run linter and prettier
         run: npm run lint
-      - name: Run tests
+      - name: Add playwright browsers
         run: npx playwright install --with-deps
+      - name: Run tests
         run: npm run test
       - name: Build website
         run: npm run build
